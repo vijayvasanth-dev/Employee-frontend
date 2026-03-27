@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../api/api";
 
-function AdminAttendance() {
+function Adminattendance() {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ function AdminAttendance() {
   );
 }
 
-export default AdminAttendance;
+export default Adminattendance;
