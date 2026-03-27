@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../api/api";
 
-function EmployeeAttendance() {
+function Employeeattendance() {
   const [records, setRecords] = useState([]);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -74,4 +74,4 @@ function EmployeeAttendance() {
   );
 }
 
-export default EmployeeAttendance;
+export default Employeeattendance;
