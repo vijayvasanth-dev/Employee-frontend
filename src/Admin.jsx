@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import api from './api/api';
 import { useNavigate } from 'react-router-dom';
 import AdminLeave from "./Leave/AdminLeave";
-import AdminAttendance from "./Attendance/AdminAttendance";
+import AdminAttendance from './Attendance/Adminattendance';
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -273,7 +273,7 @@ const Admin = () => {
         </>
       )}
       <AdminLeave />
-      <AdminAttendance />
+      <AdminAttendance/>
     </div>
   );
 };
