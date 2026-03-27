@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import api from './api/api';
 import { useNavigate } from 'react-router-dom';
+import AdminLeave from "./Leave/AdminLeave";
+import AdminAttendance from "./Attendance/AdminAttendance";
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -129,7 +131,6 @@ const Admin = () => {
     }
   };
 
-  const filtered = submitted.filter
   return (
     <div className='p-4'>
       <div className='flex justify-between items-center mb-4'>
@@ -203,9 +204,11 @@ const Admin = () => {
             <select className='border rounded mt-2 bg-white text-black w-100 block'
               name="department" value={formData.department} onChange={handleChange}>
               <option value="">Select one</option>
-              <option value="Engineering">Engineering</option>
-              <option value="Arts">Arts</option>
-              <option value="Agriculture">Agriculture</option>
+              <option value="IT">Team leader</option>
+              <option value="Developer">Developer</option>
+              <option value="QA">QA</option>
+              <option value="Devops">Devops</option>
+              <option value="Data Analyst">Data Analyst</option>
             </select>
           </label>
 
@@ -269,6 +272,8 @@ const Admin = () => {
           </div>
         </>
       )}
+      <AdminLeave />
+      <AdminAttendance />
     </div>
   );
 };
