@@ -1,7 +1,7 @@
 import api from "./api/api";
 import { useNavigate } from "react-router-dom";
 import EmployeeLeave from "./Leave/EmployeeLeave";
-import Employeeattendance from "./Attendance/Employeeattendance";
+import EmployeeAttendance from "./Attendance/Employeeattendance";
 
 function Employee({ user }) {
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ function Employee({ user }) {
         </div>
       </div>
       <EmployeeLeave />
-      <Employeeattendance />
+      <EmployeeAttendance />
     </div>
     
   );
